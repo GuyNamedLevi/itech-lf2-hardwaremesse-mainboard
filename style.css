@@ -1,0 +1,81 @@
+html, body {
+  --blub-item-vert-gap: 1rem;
+  
+  --blub-title-first-font-size: 2rem;
+  
+  --blub-item-p-font-size: 1rem;
+  --blub-item-h1-font-size: 1.2rem;
+  --blub-item-border-radius: 1rem;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: IBM Plex Sans;
+}
+
+html {
+  background-color: #F0F0F3;
+}
+
+.blubListRoot {  
+  width: 60rem;
+  max-width: 90vw;
+  margin: auto;
+  padding-top: calc(30vh - var(--blub-title-first-font-size));
+  padding-bottom: 30vh;
+}
+
+.blubListTitleFirst {
+  border: 4px solid red;
+  background-color: white;
+  text-align: center;
+  border-radius: var(--blub-item-border-radius);
+  padding: 1rem;
+  margin-bottom: var(--blub-item-vert-gap);
+}
+.blubListTitleFirst h1 {
+  font-size: var(--blub-title-first-font-size);
+}
+
+.blubListItem {
+  border: 4px solid red;
+  border-radius: var(--blub-item-border-radius);
+  background-color: white;
+  padding: 2rem 3rem;
+  margin-bottom: var(--blub-item-vert-gap);
+}
+.blubListItem h1 {
+  font-size: var(--blub-item-h1-font-size);
+}
+.blubListItem p {
+  text-align: justify;
+  font-size: var(--blub-item-p-font-size); 
+}
+
+.blubListImage {
+  border: 4px solid red;
+  border-radius: var(--blub-item-border-radius);
+  background-color: white;
+  overflow: hidden;
+  margin-bottom: var(--blub-item-vert-gap);  
+}
+
+
+.blubListImage h1 {
+  margin: 2rem 3rem 0 3rem;
+  font-size: var(--blub-item-h1-font-size);
+}
+.blubListImage img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -8px;
+}
+
+.bottomSignature {
+  font-size: 8px;
+  color: grey;
+}
